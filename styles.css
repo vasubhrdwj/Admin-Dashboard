@@ -34,8 +34,58 @@ ul {
 }
 
 .header {
+  padding: 20px 32px 20px 32px;
   background-color: #ffffff;
-  
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 3fr;
+}
+
+.search-bar > input[type="search"] {
+  appearance: none;
+  width: 70%;
+  height: 50%;
+  border-radius: 10px;
+  background-color: gainsboro;
+  border: none;
+}
+
+input[type="search"]:focus {
+  border: 2px solid black;
+  outline: none;
+}
+
+.info {
+  justify-self: end;
+}
+
+.info > img {
+  padding: 0 20px;
+  align-self: center;
+}
+
+.avatar {
+  padding-top: 10px;
+  display: grid;
+  justify-self: start;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.avatar > div > p {
+  margin-bottom: -20px;
+}
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+.btns {
+  align-self: center;
+}
+.btns > button {
+  height: 150%;
 }
 
 .main-page {
