@@ -20,6 +20,18 @@
   height: 24px;
 }
 
+.pfp-small {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.pfp-med {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 .container {
   display: grid;
   width: 100vw;
@@ -67,11 +79,17 @@ li {
   grid-template-rows: 2fr 3fr;
 }
 
+.search-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .search-bar > input[type="search"] {
   appearance: none;
   width: 80%;
   max-width: 100%;
-  height: 50%;
+  height: 40%;
   border-radius: 10px;
   background-color: gainsboro;
   border: none;
@@ -82,13 +100,15 @@ input[type="search"]:focus {
   border: 2px solid black;
 }
 
-.info > img {
-  padding: 0 20px;
-  align-self: center;
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-self: end;
 }
 
 .avatar {
-  padding-top: 10px;
+  padding-top: 20px;
   display: grid;
   justify-self: start;
   grid-template-columns: 1fr 2fr;
@@ -99,13 +119,16 @@ input[type="search"]:focus {
   margin-bottom: -20px;
 }
 .btns {
+  padding-top: 20px;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  /* padding-left: 100px; */
+  align-items: center;
 }
 .btns > button {
   height: 50%;
   width: 20%;
-  min-width: fit-content;
+  min-width: 20%;
   border-radius: 20px;
   border: none;
   background-color: blue;
